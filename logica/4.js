@@ -28,3 +28,30 @@ import image from "./code_example.png";
 
 // * getProducts: Función para obtener la información de los productos desde la API.
 
+// * autoConnectSession: Función que acepta un parámetro opcional llamado first. Comienza recuperando el token de 
+//   autenticación (auth_token2) del almacenamiento local. Si existe un token, llama a la función disconnectSession().
+//   Si no hay un token, crea un objeto de configuración con el token de autorización y realiza una solicitud POST a 
+//   una API para refrescar el token. Si la solicitud tiene éxito, actualiza los tokens de autenticación y de acceso 
+//   según la respuesta de la API.
+
+// * refreshToken: Esta función acepta un parámetro llamado token. Crea un objeto de configuración con el token de 
+//   autorización. Realiza una solicitud POST similar a la anterior para refrescar el token de acceso. Si la solicitud 
+//   tiene éxito, actualiza el token de acceso.
+
+// * getGeoInfo: Función que Realiza una solicitud GET a una API. Si la solicitud  tiene éxito, obtiene el código de país 
+//   (country_code) de la respuesta y lo establece en el estado.
+
+// * setCountryPayment:Esta función acepta un parámetro llamado code. Recupera el token de autenticación (auth_token) 
+//   del almacenamiento local. Crea un objeto de configuración con el token de autorización. Realiza una solicitud POST 
+//   a una API para actualizar la información de pago del usuario utilizando el código proporcionado. Si hay un error, 
+//   lo registra en la consola.
+
+// * getHomeData: Aunque no se muestra en el código, se menciona como una función que obtiene datos de inicio desde una API.
+
+// * disconecctSession: Cierra la sesión actual. Establece la sesión del usuario como undefined. Obtiene un nuevo token 
+//   de autenticación. Redirige al usuario a la página de inicio de sesión.
+
+// * providerValue: Objeto que define un contexto de proveedor con varios valores relacionados con la sesión y los datos 
+//   del usuario. Incluye información sobre la sesión, tokens de acceso, productos, funciones de desconexión y más.
+
+// * Return: Renderiza el contenido de la página.
