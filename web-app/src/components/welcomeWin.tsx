@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../styles/welcome.module.css";
+import MockupWelcome from "@/assets/images/MockupWelcome.svg";
 
 const welcome = () => {
   return (
@@ -12,11 +14,12 @@ const welcome = () => {
         <p>INVIERTE EN EL MERCADO DE PASES Y DISFRUTA DE EXPERIENCIAS ÚNICAS</p>
       </div>
       <div>
-        <img
-          src="https://www.win.investments/home/phoneMockup.webp"
-          alt="image"
+        <Image src={MockupWelcome} alt="hola"/>
+        {/* <img
+          src={MockupWelcome}
+          alt="Welcome to win"
           className={styles.image}
-        />
+        /> */}
       </div>
       <div></div>
     </section>

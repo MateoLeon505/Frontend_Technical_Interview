@@ -1,36 +1,36 @@
 @font-face {
   font-family: "Integral CF Regular";
-  src: url("../../public/assets/fonts/Font_integral-cf//IntegralCF-Regular.ttf")
+  src: url("../assets/fonts/Font_integral-cf//IntegralCF-Regular.ttf")
     format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Integral CF Medium";
-  src: url("../../public/assets/fonts/Font_integral-cf//IntegralCF-Medium.ttf")
+  src: url("../assets/fonts/Font_integral-cf//IntegralCF-Medium.ttf")
     format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Integral CF Bold";
-  src: url("../../public/assets/fonts/Font_integral-cf//IntegralCF-Bold.ttf")
+  src: url("../assets/fonts/Font_integral-cf//IntegralCF-Bold.ttf")
     format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Nunito Sans Regular";
-  src: url("../../public/assets/fonts/Nunito_Sans/NunitoSans_10pt-Regular.ttf")
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans_10pt-Regular.ttf")
     format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Nunito Sans Bold";
-  src: url("../../public/assets/fonts/Nunito_Sans/NunitoSans_7pt_Condensed-Bold.ttf")
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans_7pt_Condensed-Bold.ttf")
     format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Nunito Sans Extra-Bold";
-  src: url("../../public/assets/fonts/Nunito_Sans/NunitoSans_7pt_Condensed-ExtraBold.ttf")
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans_7pt_Condensed-ExtraBold.ttf")
     format("truetype");
   font-style: normal;
 }
@@ -94,7 +94,7 @@ ul {
 }
 
 img {
-  height: 300px;
+  height: 400px;
   max-width: 100%;
 }
 
