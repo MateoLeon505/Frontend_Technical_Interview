@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import {
   Welcome,
@@ -16,7 +17,7 @@ const Home = () => {
   const changeStep = (swiper) => setActiveStep(swiper.activeIndex);
 
   return (
-    <div >
+    <div>
       <Stepper activeStep={activeStep} />
       <Swiper
         spaceBetween={50}
