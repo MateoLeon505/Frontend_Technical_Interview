@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Integral-CF";
-  src: url("../../public/assets/fonts/Font_integral-cf/IntegralCF-Bold.eot")
+  src: url("../../public/assets/fonts/Font_integral-cf/IntegralCF-Bold.ttf");
 }
 
 * {
@@ -21,7 +21,9 @@ body {
   font-family: "Integral-CF", sans-serif;
   padding: 2% 5%;
 }
-
+button {
+  font-family: "Nunito Sans", sans-serif;
+}
 a {
   color: inherit;
   text-decoration: none;

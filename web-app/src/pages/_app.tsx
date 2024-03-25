@@ -12,7 +12,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" href="https://www.win.investments/site-logo.svg" />
       </Head>
       <body>
-        <Component {...pageProps} />
+        <main>
+          <Component {...pageProps} />
+        </main>
       </body>
     </div>
   );

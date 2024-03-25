@@ -25,3 +25,9 @@
   background: linear-gradient(91.26deg, rgba(0, 0, 0, 0.4), transparent),
     #64c883;
 }
+
+@media (max-width: 900px) {
+  .swiperButt {
+    width: 95%;
+  }
+}
