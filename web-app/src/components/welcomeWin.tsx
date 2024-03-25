@@ -5,11 +5,11 @@ const welcome = () => {
   return (
     <section className={styles.sectionContainer}>
       <div>
-        <h1>BIENVENIDO A WIN</h1>
-        <h4 className={styles.textGreen}>EL ÚNICO MARKETPLACE DE FÚTBOL</h4>
-        <h5 className={styles.littleText}>
-          INVIERTE EN EL MERCADO DE PASES Y DISFRUTA DE EXPERIENCIAS ÚNICAS
-        </h5>
+        <h1 className={styles.header}>BIENVENIDO A WIN</h1>
+        <h4 className={styles.textGreen}>
+          <span>EL ÚNICO MARKETPLACE DE FÚTBOL</span>
+        </h4>
+        <p>INVIERTE EN EL MERCADO DE PASES Y DISFRUTA DE EXPERIENCIAS ÚNICAS</p>
       </div>
       <div>
         <img

@@ -5,12 +5,11 @@ const Enter = () => {
   return (
     <section className={styles.sectionContainer}>
       <div>
-        <h1>INGRESA ALMERCADO DE PASES</h1>
-        <h4>
+        <h1 className={styles.header}>INGRESA AL MERCADO DE PASES</h1>
+        <h5>
           INVIERTE Y GANA CON LA PRÓXIMA{" "}
-          <span className={styles.textYellow}> TRANSFERENCIA DEL JUGADOR</span>
-        </h4>
-        <h4></h4>
+          <span className={styles.texTransfer}> TRANSFERENCIA DEL JUGADOR</span>
+        </h5>
       </div>
       <div>
         <img

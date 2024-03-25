@@ -3,18 +3,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: space-evenly;
     text-align: center;
 }
-
-.textYellow {
-    font-weight: 500;
-    color: #C9A555;
+.header {
+    margin-bottom: 1rem;
 }
-
-.discoverImage {
-    max-width: 100%;
+.textYellow {
+    color: #C9A555;
 }
 
 @media (max-width: 900px) {
