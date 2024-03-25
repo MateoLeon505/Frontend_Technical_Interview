@@ -1,6 +1,37 @@
+.mainContainer {
+  height: 95vh;
+  width: 100%;
+}
+
+.background1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    URL("../assets/images/backgrounds/slide1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 140px;
+}
+
+.background2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    URL("../assets/images/backgrounds/slide2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .swiperContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .background1 {
+    background-position: 50% 190px;
+  }
+  .background2 {
+    background-size: 100%;
+    background-position: center top;
+  }
 }

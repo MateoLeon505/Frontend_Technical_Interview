@@ -1,12 +1,11 @@
 .sectionContainer {
-  min-height: 80vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-evenly;
   text-align: center;
-  background-image: URL('../assets/images/backgrounds/slide1.svg');
 }
 .header {
   margin-bottom: 0.5rem;

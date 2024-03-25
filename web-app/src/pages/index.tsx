@@ -17,7 +17,11 @@ const Home = () => {
   const changeStep = (swiper) => setActiveStep(swiper.activeIndex);
 
   return (
-    <div>
+    <div
+      className={`${styles.mainContainer} 
+      ${activeStep === 0 && styles.background1} 
+      ${activeStep === 1 && styles.background2}`}
+    >
       <Stepper activeStep={activeStep} />
       <Swiper
         spaceBetween={50}

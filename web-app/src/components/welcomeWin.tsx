@@ -14,12 +14,7 @@ const welcome = () => {
         <p>INVIERTE EN EL MERCADO DE PASES Y DISFRUTA DE EXPERIENCIAS ÚNICAS</p>
       </div>
       <div>
-        <Image src={MockupWelcome} alt="hola"/>
-        {/* <img
-          src={MockupWelcome}
-          alt="Welcome to win"
-          className={styles.image}
-        /> */}
+        <Image src={MockupWelcome} alt="Welcome To Win" />
       </div>
       <div></div>
     </section>
