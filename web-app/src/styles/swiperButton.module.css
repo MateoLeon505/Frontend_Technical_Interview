@@ -1,0 +1,27 @@
+.buttonContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+.swiperButt {
+  background-color: transparent;
+  color: #64c883;
+  width: 30%;
+  padding: 15px 20px;
+  border: 1px solid #64c883;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.swiperButt:hover {
+  background: linear-gradient(91.26deg, transparent, rgba(0, 0, 0, 0.4)),
+    #64c883;
+  color: #f3f3f4;
+  border: none;
+}
+
+.swiperButt:active {
+  background: linear-gradient(91.26deg, rgba(0, 0, 0, 0.4), transparent),
+    #64c883;
+}
