@@ -1,16 +1,20 @@
 import React from "react";
+import styles from "../styles/discover.module.css";
 
 const Discover = () => {
   return (
-    <section>
+    <section className={styles.sectionContainer}>
       <div>
         <h1>DESCUBRE LOS MEJORES CLUBES</h1>
-        <h4>DONDE JUEGAN NUESTROS JUGADORES</h4>
+        <h5>
+          DONDE JUEGAN <span className={styles.textYellow}>NUESTROS JUGADORES</span>
+        </h5>
       </div>
       <div>
         <img
           src="https://cryptoconexion.com/wp-content/uploads/2023/04/win-02.jpg"
           alt="image"
+          className={styles.discoverImage}
         />
       </div>
       <div></div>

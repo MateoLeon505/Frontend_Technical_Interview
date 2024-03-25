@@ -11,9 +11,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://www.win.investments/site-logo.svg" />
       </Head>
-      <main>
+      <body>
         <Component {...pageProps} />
-      </main>
+      </body>
     </>
   );
 };

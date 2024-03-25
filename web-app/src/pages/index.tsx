@@ -11,35 +11,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "@/styles/Home.module.css";
 import "swiper/css";
 
-const Slider = () => {
-  const [activeStep, setActiveStep] = useState(1);
+const Home = () => {
+  const [activeStep, setActiveStep] = useState(0);
   const changeStep = (swiper) => setActiveStep(swiper.activeIndex);
 
   return (
-    <>
+    <div >
       <Stepper activeStep={activeStep} />
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        // className={styles.swiper}
         onSlideChange={changeStep}
+        className={styles.swiperContainer}
       >
-        <SwiperSlide>
+        <SwiperSlide className={styles.slide}>
           <Welcome />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={styles.slide}>
           <Enter />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={styles.slide}>
           <Experiences />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={styles.slide}>
           <Discover />
         </SwiperSlide>
         <SwiperButton />
       </Swiper>
-    </>
+    </div>
   );
 };
 
-export default Slider;
+export default Home;
