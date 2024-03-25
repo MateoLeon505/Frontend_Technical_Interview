@@ -1,9 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -14,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://www.win.investments/site-logo.svg" />
       </Head>
-      <main className={`${inter.className}`}>
+      <main>
         <Component {...pageProps} />
       </main>
     </>

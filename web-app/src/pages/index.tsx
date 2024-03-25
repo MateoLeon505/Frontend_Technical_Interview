@@ -1,24 +1,44 @@
-import React from "react";
-import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import {
+  Welcome,
+  Enter,
+  Experiences,
+  Discover,
+  Stepper,
+  SwiperButton,
+} from "@/components/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "@/styles/Home.module.css";
 import "swiper/css";
 
 const Slider = () => {
-  const router = useRouter();
-  // const goToSlider = router.push('/slider')
+  const [activeStep, setActiveStep] = useState(1);
+  const changeStep = (swiper) => setActiveStep(swiper.activeIndex);
+
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <>
+      <Stepper activeStep={activeStep} />
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        // className={styles.swiper}
+        onSlideChange={changeStep}
+      >
+        <SwiperSlide>
+          <Welcome />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Enter />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Experiences />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Discover />
+        </SwiperSlide>
+        <SwiperButton />
+      </Swiper>
+    </>
   );
 };
 

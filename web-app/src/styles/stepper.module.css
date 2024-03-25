@@ -1,0 +1,17 @@
+.stepper {
+    display: flex;
+    width: 100%;
+    gap: 0.7rem;
+}
+
+.step {
+    flex: 1;
+    height: 0.4rem;
+    background-color: #AAAAAA;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.stepActive {
+    background-color: #64C883;
+}
