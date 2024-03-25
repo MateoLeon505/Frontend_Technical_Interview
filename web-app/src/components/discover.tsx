@@ -1,20 +1,20 @@
 import React from "react";
-import styles from "../styles/discover.module.css";
+import Image from "next/image";
+import teams from "@/assets/images/teams.svg";
+import styles from "../styles/slides.module.css";
 
 const Discover = () => {
   return (
     <section className={styles.sectionContainer}>
       <div>
-        <h1 className={styles.header}>DESCUBRE LOS MEJORES CLUBES</h1>
+        <h1 className={styles.doubleSpaceHeader}>DESCUBRE LOS MEJORES CLUBES</h1>
         <h5>
-          DONDE JUEGAN <span className={styles.textYellow}>NUESTROS JUGADORES</span>
+          DONDE JUEGAN{" "}
+          <span className={styles.textYellow}>NUESTROS JUGADORES</span>
         </h5>
       </div>
-      <div>
-        <img
-          src="https://cryptoconexion.com/wp-content/uploads/2023/04/win-02.jpg"
-          alt="image"
-        />
+      <div className={styles.imageContiner}>
+        <Image src={teams} alt="Welcome To Win" fill />
       </div>
       <div></div>
     </section>

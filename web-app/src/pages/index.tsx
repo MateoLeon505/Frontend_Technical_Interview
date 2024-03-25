@@ -41,7 +41,7 @@ const Home = () => {
         <SwiperSlide className={styles.slide}>
           <Discover />
         </SwiperSlide>
-        <SwiperButton />
+        <SwiperButton activeStep={activeStep}/>
       </Swiper>
     </div>
   );

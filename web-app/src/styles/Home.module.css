@@ -1,14 +1,14 @@
 .mainContainer {
-  height: 95vh;
+  height: calc(100vh - 17px);
   width: 100%;
 }
 
 .background1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     URL("../assets/images/backgrounds/slide1.svg");
-  background-size: cover;
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position: center top 140px;
+  background-position: center top 150px;
 }
 
 .background2 {
@@ -22,12 +22,14 @@
 .swiperContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 0;
+  justify-content: flex-start;
   align-items: center;
 }
 
 @media (max-width: 768px) {
   .background1 {
+    background-size: 150%;
     background-position: 50% 190px;
   }
   .background2 {

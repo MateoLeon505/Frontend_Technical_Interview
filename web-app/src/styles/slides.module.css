@@ -1,0 +1,44 @@
+.sectionContainer {
+  /* min-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2vh;
+}
+/* .sectionContainer * {
+  border: 1px solid white;
+  } */
+.imageContiner {
+  position: relative;
+  width: 100%;
+  height: 62vh;
+  max-width: 700px;
+  aspect-ratio: 70/45;
+  margin: 0 auto;
+}
+.spaceHeader {
+  margin-bottom: 0.5rem;
+}
+.doubleSpaceHeader {
+  margin-bottom: 1rem;
+}
+.subHeader {
+  margin-top: 1rem;
+}
+.textGreen {
+  color: #64c883;
+}
+.textYellow {
+  color: #c9a555;
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    margin-top: 5vh;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}

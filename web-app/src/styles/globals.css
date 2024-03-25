@@ -51,7 +51,7 @@ body {
 
 body {
   font-family: "Nunito Sans Regular", sans-serif;
-  padding: 2% 0 0 0;
+  padding-top: 1%;
 }
 
 h1, h2, h3 {
@@ -93,10 +93,6 @@ ul {
   list-style: none;
 }
 
-Image {
-  height: 400px;
-  max-width: 100%;
-}
 img {
   height: 400px;
   max-width: 100%;

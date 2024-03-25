@@ -1,11 +1,13 @@
 import React from "react";
-import styles from "../styles/experiences.module.css";
+import Image from "next/image";
+import MockupWelcome from "@/assets/images/MockupWelcome.svg";
+import styles from "../styles/slides.module.css";
 
 const Experiences = () => {
   return (
     <section className={styles.sectionContainer}>
       <div>
-        <h1 className={styles.header}>VIVE TUS PROPIAS EXPERIENCIAS</h1>
+        <h1 className={styles.doubleSpaceHeader}>VIVE TUS PROPIAS EXPERIENCIAS</h1>
         <h4>
           <span className={styles.textGreen}>
             VIVE TU PASIÓN DE FORMA ÚNICA
@@ -13,11 +15,8 @@ const Experiences = () => {
           COMO NUNCA LO IMAGINASTE
         </h4>
       </div>
-      <div>
-        <img
-          src="https://www.win.investments/home/phoneMockup.webp"
-          alt="image"
-        />
+      <div className={styles.imageContiner}>
+        <Image src={MockupWelcome} alt="Welcome To Win" fill/>
       </div>
       <div></div>
     </section>
