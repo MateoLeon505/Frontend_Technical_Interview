@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MockupWelcome from "@/assets/images/MockupWelcome.svg";
+import Mockup2 from "@/assets/images/Mockup2.svg";
 import styles from "../styles/slides.module.css";
 
 const Experiences = () => {
@@ -15,8 +15,8 @@ const Experiences = () => {
           COMO NUNCA LO IMAGINASTE
         </h4>
       </div>
-      <div className={styles.imageContiner}>
-        <Image src={MockupWelcome} alt="Welcome To Win" fill/>
+      <div className={styles.imageContiner2}>
+        <Image src={Mockup2} alt="Welcome To Win" fill/>
       </div>
       <div></div>
     </section>

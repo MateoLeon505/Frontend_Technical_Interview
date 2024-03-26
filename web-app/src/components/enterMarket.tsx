@@ -13,7 +13,7 @@ const Enter = () => {
           <span className={styles.textYellow}> TRANSFERENCIA DEL JUGADOR</span>
         </h5>
       </div>
-      <div className={styles.imageContiner}>
+      <div className={styles.imageContiner2}>
         <Image src={DiegoValdes} alt="Welcome To Win" fill />
       </div>
       <div></div>

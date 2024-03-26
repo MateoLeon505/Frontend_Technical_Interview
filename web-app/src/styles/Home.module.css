@@ -8,12 +8,11 @@
     URL("../assets/images/backgrounds/slide1.svg");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position: center top 150px;
+  background-position: center top 120px;
 }
 
 .background2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    URL("../assets/images/backgrounds/slide2.svg");
+  background-image: URL("../assets/images/backgrounds/slide2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -29,11 +28,11 @@
 
 @media (max-width: 768px) {
   .background1 {
-    background-size: 150%;
-    background-position: 50% 190px;
+    background-size: 120%;
+    background-position: 30% 130px;
   }
   .background2 {
-    background-size: 100%;
-    background-position: center top;
+    background-size: 135%;
+    background-position: left calc(50% + 158px); 
   }
 }

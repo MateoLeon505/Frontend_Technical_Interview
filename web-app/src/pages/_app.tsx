@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { TabBar } from "@/components/index";
 import "@/styles/globals.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -12,6 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" href="https://www.win.investments/site-logo.svg" />
       </Head>
       <Component {...pageProps} />
+      <TabBar/>
     </>
   );
 };

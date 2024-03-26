@@ -4,4 +4,5 @@ export { default as Experiences } from "./experiences";
 export { default as Discover } from "./discover";
 export { default as Stepper } from "./stepper";
 export { default as SwiperButton } from "./swiperButton";
+export { default as TabBar } from "./tabBar";
 
