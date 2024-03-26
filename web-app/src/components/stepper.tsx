@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/stepper.module.css";
 
-const Stepper = ({ activeStep }) => {
+const Stepper = ({ activeStep }: { activeStep: number }) => {
 
   return (
     <ul className={styles.stepper}>

@@ -14,7 +14,7 @@ import "swiper/css";
 
 const Home = () => {
   const [activeStep, setActiveStep] = useState(0);
-  const changeStep = (swiper) => setActiveStep(swiper.activeIndex);
+  const changeStep = (swiper: any) => setActiveStep(swiper.activeIndex);
 
   return (
     <div
@@ -41,7 +41,7 @@ const Home = () => {
         <SwiperSlide className={styles.slide}>
           <Discover />
         </SwiperSlide>
-        <SwiperButton activeStep={activeStep}/>
+        <SwiperButton activeStep={activeStep} />
       </Swiper>
     </div>
   );
