@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import teams from "@/assets/images/teams.svg";
-import styles from "../styles/slides.module.css";
+import styles from "@/styles/slides.module.css";
 
 const Discover = () => {
   return (

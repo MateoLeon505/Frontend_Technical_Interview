@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/slides.module.css";
+import styles from "@/styles/slides.module.css";
 import MockupWelcome from "@/assets/images/MockupWelcome.svg";
 
 const welcome = () => {

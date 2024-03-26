@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import DiegoValdes from "@/assets/images/Diego Valdes.svg";
-import styles from "../styles/slides.module.css";
+import styles from "@/styles/slides.module.css";
 
 const Enter = () => {
   return (

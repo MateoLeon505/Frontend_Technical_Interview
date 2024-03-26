@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useSwiper } from "swiper/react";
-import styles from "../styles/swiperButton.module.css";
+import styles from "@/styles/swiperButton.module.css";
 
 const SwiperButton = ({ activeStep }: { activeStep: number }) => {
   const swiper = useSwiper();

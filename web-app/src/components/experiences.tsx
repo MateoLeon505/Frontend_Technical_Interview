@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Mockup2 from "@/assets/images/Mockup2.svg";
-import styles from "../styles/slides.module.css";
+import styles from "@/styles/slides.module.css";
 
 const Experiences = () => {
   return (
