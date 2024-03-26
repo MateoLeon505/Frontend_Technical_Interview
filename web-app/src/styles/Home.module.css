@@ -6,9 +6,9 @@
 .background1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     URL("../assets/images/backgrounds/slide1.svg");
-  background-size: 80%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top 60px;
+  background-position: center top 40px;
 }
 
 .background2 {
