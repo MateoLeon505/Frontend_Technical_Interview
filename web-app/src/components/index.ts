@@ -5,6 +5,6 @@ export { default as Discover } from "./discover";
 export { default as Stepper } from "./stepper";
 export { default as SwiperButton } from "./swiperButton";
 export { default as TabBar } from "./tabBar";
-export { default as Succes } from "./succes";
+export { default as Success } from "./success";
 
 

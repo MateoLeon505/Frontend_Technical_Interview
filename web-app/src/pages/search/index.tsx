@@ -1,10 +1,10 @@
 import React from "react";
-import { Succes } from "@/components/index";
+import { Success } from "@/components/index";
 
 const Search = () => {
   return (
-    <div>Search
-      <Succes/>
+    <div>
+      <Success />
     </div>
   );
 };
