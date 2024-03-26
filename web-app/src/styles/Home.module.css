@@ -1,5 +1,5 @@
 .mainContainer {
-  height: calc(100vh - 17px);
+  height: 95vh;
   width: 100%;
 }
 
@@ -8,7 +8,7 @@
     URL("../assets/images/backgrounds/slide1.svg");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position: center top 120px;
+  background-position: center top 60px;
 }
 
 .background2 {
@@ -33,6 +33,6 @@
   }
   .background2 {
     background-size: 135%;
-    background-position: left calc(50% + 158px); 
+    background-position: left calc(50% + 158px);
   }
 }

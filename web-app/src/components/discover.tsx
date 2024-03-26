@@ -15,7 +15,7 @@ const Discover = () => {
           <span className={styles.textYellow}>NUESTROS JUGADORES</span>
         </h5>
       </div>
-      <div>
+      <div className={styles.figure}>
         <div className={styles.imageContiner2}>
           <Image src={teams} alt="Welcome To Win" fill />
         </div>

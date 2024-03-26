@@ -52,28 +52,44 @@ body {
 body {
   font-family: "Nunito Sans Regular", sans-serif;
   padding-top: 1%;
+  height: 98vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 2%;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Integral CF Regular";
   letter-spacing: 0.1rem;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 25px;
 }
 
 h4 {
   font-family: "Nunito Sans Bold", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 h5 {
   font-family: "Nunito Sans Bold", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+}
+h6 {
+  font-family: "Nunito Sans Regular", sans-serif;
 }
 p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 span {
@@ -91,11 +107,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-img {
-  height: 400px;
-  max-width: 100%;
 }
 
 @media (max-width: 900px) {
