@@ -2,56 +2,38 @@
 //Pista, el codigo presentado handlea dos diferentes tipos de tokens (api token, session token)
 
 import image from "./code_example.png";
-// El código gestiona la autenticación y autorización del usuario en la página.
+// El código se encarga de la autenticación y autorización del usuario en la página web.
 
-// Utiliza el hook personalizado useLocalStorage para gestionar el token de autenticación del usuario en el 
-// almacenamiento local del navegador. Se inicializan varios estados utilizando el hook useState para gestionar la 
-// sesión del usuario, los productos y los datos del hogar. La moneda actual se obtiene del almacenamiento local y 
-// se analiza como JSON. Se crea una instancia de enrutador utilizando la función useRouter().
+// FUNCIONES:
 
-// * updateCurrency: Función que actualiza el valor de la moneda, hace llamado a la API para recibir datos sobre
-//   variación en las tasas de cambio y usa el almacenamiento local del navegador para registrar los cambios.
+// * Gestión autenticación para el inicio de sesión del usuario, los productos, geolocalización y
+//   moneda.
 
-// * setCurrency: Función que establece la moneda del usuario, se le pasa el id de la moneda y el objeto de 
-//   configuración previamente creado
+// * Establecer y actualizar el valor de la moneda.
 
-// * useEffect (auto connect session): Función que se encarga de conectar automáticamente la sesión del usuario si 
-//   existe un token de autenticación.
+// * Conectar automáticamente la sesión del usuario.
 
-// * useEffect (setLenguage prefiered): Función que establece el idioma preferido basado en la información de la 
-//   sesión del usuario.
+// * Establecimiento del idioma preferido.
 
-// * useEffect (getProducts): Recupera la información de productos si el usuario está autenticado; de lo contrario, 
-//   activa otra función para obtener un token de autenticación.
+// * Obtención de datos de los productos.
 
-// * getToken: Función asíncrona que realiza una solicitud POST a una API para obtener un token de autenticación.
+// * Obtención y refresh del token de autenticación.
 
-// * getProducts: Función para obtener la información de los productos desde la API.
+// * Obtención información geográfica del usuario.
 
-// * autoConnectSession: Función que acepta un parámetro opcional llamado first. Comienza recuperando el token de 
-//   autenticación (auth_token2) del almacenamiento local. Si existe un token, llama a la función disconnectSession().
-//   Si no hay un token, crea un objeto de configuración con el token de autorización y realiza una solicitud POST a 
-//   una API para refrescar el token. Si la solicitud tiene éxito, actualiza los tokens de autenticación y de acceso 
-//   según la respuesta de la API.
+// * Cierre de sesión del usuario.
 
-// * refreshToken: Esta función acepta un parámetro llamado token. Crea un objeto de configuración con el token de 
-//   autorización. Realiza una solicitud POST similar a la anterior para refrescar el token de acceso. Si la solicitud 
-//   tiene éxito, actualiza el token de acceso.
+// * Manejo de información de la sesión del usuario.
 
-// * getGeoInfo: Función que Realiza una solicitud GET a una API. Si la solicitud  tiene éxito, obtiene el código de país 
-//   (country_code) de la respuesta y lo establece en el estado.
 
-// * setCountryPayment:Esta función acepta un parámetro llamado code. Recupera el token de autenticación (auth_token) 
-//   del almacenamiento local. Crea un objeto de configuración con el token de autorización. Realiza una solicitud POST 
-//   a una API para actualizar la información de pago del usuario utilizando el código proporcionado. Si hay un error, 
-//   lo registra en la consola.
+// MEJORAS planteadas:
 
-// * getHomeData: Aunque no se muestra en el código, se menciona como una función que obtiene datos de inicio desde una API.
+// * Eliminar funciones en desuso como getProducts() y getHomeData().
 
-// * disconecctSession: Cierra la sesión actual. Establece la sesión del usuario como undefined. Obtiene un nuevo token 
-//   de autenticación. Redirige al usuario a la página de inicio de sesión.
+// * Eliminar comentarios innecesarios.
 
-// * providerValue: Objeto que define un contexto de proveedor con varios valores relacionados con la sesión y los datos 
-//   del usuario. Incluye información sobre la sesión, tokens de acceso, productos, funciones de desconexión y más.
+// * Elimonar los console.log().
 
-// * Return: Renderiza el contenido de la página.
+// * Mejorar el manejo de errores proporcionándole al usuario una información clara
+//   en caso de tener problemas de autenticación o autoriazación ya sea con alertas, 
+//   mensajes de error, notificaciones o redirecciones.
