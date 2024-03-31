@@ -25,7 +25,7 @@ const Enter = () => {
   if (!loadedFonts) return null;
 
   return (
-    <View style={styles.enterContainer}>
+    <View style={styles.enterContainer} onLayout={onLayout}>
       <Image
         source={require("../../assets/images/backgrounds/backgroundSlide2.png")}
         style={styles.backgroundImage}

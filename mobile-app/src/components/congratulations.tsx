@@ -31,7 +31,7 @@ const Congratulations = () => {
   if (!loadedFonts) return null;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onLayout={onLayout}>
       <Animated.Image
         source={require("../assets/images/success.png")}
         entering={FadeInUp.delay(200).duration(1000).springify()}

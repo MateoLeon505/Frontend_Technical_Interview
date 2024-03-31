@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { usePathname } from "expo-router";
-import { View, StyleSheet, Button, TouchableOpacity, Text } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import GlobalStyles from "../../styles";
 import Logo from "../../assets/icon.svg";
 import { Congratulations } from "../../components/index";
 import { openURL } from "expo-linking";
@@ -41,7 +40,7 @@ const Search = () => {
   }, [pathname]);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onLayout={onLayout}>
       {!showContent ? (
         <Congratulations />
       ) : (

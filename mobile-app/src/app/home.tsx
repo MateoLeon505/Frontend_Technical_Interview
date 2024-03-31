@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Dimensions, Button } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import Carousel from "react-native-reanimated-carousel";
 import type { ICarouselInstance } from "react-native-reanimated-carousel";
 import {
@@ -19,6 +20,7 @@ const Home = () => {
   const onNextSlide = () => ref.current.next();
   return (
     <View style={styles.container}>
+      <StatusBar style="auto" backgroundColor="#000000"/>
       <Stepper activeStep={activeStep} />
       <Carousel
         loop

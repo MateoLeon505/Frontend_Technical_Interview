@@ -10,7 +10,7 @@ const TabsLayout = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowHeader(true);
-    }, 6000);
+    }, 5111);
     return () => {
       clearTimeout(timer);
       setShowHeader(false);
