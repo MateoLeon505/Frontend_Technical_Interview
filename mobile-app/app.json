@@ -14,12 +14,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mateoleon505.mobileapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icon.png"
-      }
+      },
+      "package": "com.mateoleon505.mobileapp"
     },
     "scheme": "mobile-app",
     "web": {
