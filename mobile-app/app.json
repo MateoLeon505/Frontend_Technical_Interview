@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/icon.png"
+        "foregroundImage": "./src/assets/adaptive-icon.png"
       },
       "package": "com.mateoleon505.mobileapp"
     },
@@ -36,7 +36,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "d0672402-0e88-4726-be8d-4083ca7c1a03"
+        "projectId": "1b88a05c-4a11-4d71-ad18-13ea833f873f"
       }
     }
   }
