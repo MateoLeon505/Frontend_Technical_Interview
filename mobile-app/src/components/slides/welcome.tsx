@@ -36,7 +36,13 @@ const Welcome = () => {
         <Text style={[GlobalStyles.h1, styles.fontIntegral]}>
           BIENVENIDO A WIN
         </Text>
-        <Text style={[GlobalStyles.textGreen, GlobalStyles.h3, styles.fontExtraBold]}>
+        <Text
+          style={[
+            GlobalStyles.textGreen,
+            GlobalStyles.h3,
+            styles.fontExtraBold,
+          ]}
+        >
           EL ÚNICO MARKETPLACE DE FUTBOL
         </Text>
         <Text style={[GlobalStyles.paragraph, styles.fontBold]}>
@@ -44,10 +50,7 @@ const Welcome = () => {
         </Text>
       </View>
       <View>
-        <MockUp
-        //  height="100%"
-        // width={120}
-        />
+        <MockUp />
       </View>
     </View>
   );
@@ -65,7 +68,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     display: "flex",
-    gap: 5
+    gap: 5,
   },
   backgroundImage: {
     flex: 1,
@@ -76,13 +79,16 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: "8%",
   },
+  mockupImage: {
+    marginBottom: -50,
+  },
   fontIntegral: {
     fontFamily: "IntegralCFRegular",
   },
   fontExtraBold: {
-    fontFamily: "NunitoSansExtraBold"
+    fontFamily: "NunitoSansExtraBold",
   },
   fontBold: {
-    fontFamily: "NunitoSansBold"
+    fontFamily: "NunitoSansBold",
   },
 });

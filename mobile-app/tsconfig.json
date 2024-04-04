@@ -1,4 +1,5 @@
 {
   "compilerOptions": {},
+  "include": ["src/components", "custom.d.ts"],
   "extends": "expo/tsconfig.base"
 }
