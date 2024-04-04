@@ -1,6 +1,8 @@
 .buttonContainer {
   display: flex;
-  margin: 0 auto;
+  position: absolute;
+  top: calc(90%);
+  z-index: 99;
   width: 100%;
   justify-content: center;
   align-items: flex-start;
@@ -26,7 +28,10 @@
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.4), transparent), #64c883;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  .buttonContainer {
+    top: calc(80%);
+  }
   .swiperButt {
     width: 90%;
   }

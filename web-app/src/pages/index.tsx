@@ -17,11 +17,7 @@ const Home = () => {
   const changeStep = (swiper: any) => setActiveStep(swiper.activeIndex);
 
   return (
-    <div
-      className={`${styles.mainContainer} 
-      ${activeStep === 0 && styles.background1} 
-      ${activeStep === 1 && styles.background2}`}
-    >
+    <div className={styles.mainContainer}>
       <Stepper activeStep={activeStep} />
       <Swiper
         spaceBetween={50}
@@ -29,16 +25,16 @@ const Home = () => {
         onSlideChange={changeStep}
         className={styles.swiperContainer}
       >
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide>
           <Welcome />
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide>
           <Enter />
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide>
           <Experiences />
         </SwiperSlide>
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide>
           <Discover />
         </SwiperSlide>
         <SwiperButton activeStep={activeStep} />

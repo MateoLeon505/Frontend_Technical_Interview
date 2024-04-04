@@ -5,7 +5,7 @@ import styles from "@/styles/slides.module.css";
 
 const Enter = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={`${styles.sectionContainer} ${styles.background2}`}>
       <div>
         <h1 className={styles.doubleSpaceHeader}>INGRESA AL MERCADO DE PASES</h1>
         <h5>

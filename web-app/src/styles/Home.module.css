@@ -1,21 +1,5 @@
 .mainContainer {
-  height: 95vh;
   width: 100%;
-}
-
-.background1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    URL("../assets/images/backgrounds/slide1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top 40px;
-}
-
-.background2 {
-  background-image: URL("../assets/images/backgrounds/slide2.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .swiperContainer {
@@ -26,13 +10,3 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .background1 {
-    background-size: 120%;
-    background-position: 30% 130px;
-  }
-  .background2 {
-    background-size: 135%;
-    background-position: left calc(50% + 158px);
-  }
-}

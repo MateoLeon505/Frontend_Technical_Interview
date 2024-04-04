@@ -5,7 +5,7 @@ import MockupWelcome from "@/assets/images/MockupWelcome.svg";
 
 const welcome = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={`${styles.sectionContainer} ${styles.background1}`}>
       <div>
         <h1 className={styles.spaceHeader}>BIENVENIDO A WIN</h1>
         <h4 className={`${styles.textGreen} ${styles.spaceHeader}`}>

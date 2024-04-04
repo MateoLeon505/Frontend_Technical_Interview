@@ -5,7 +5,7 @@ import styles from "@/styles/slides.module.css";
 
 const Discover = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={`${styles.sectionContainer} ${styles.spacing}`}>
       <div>
         <h1 className={styles.doubleSpaceHeader}>
           DESCUBRE LOS MEJORES CLUBES
