@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { usePathname } from "expo-router";
-import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Text, Image } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import Logo from "../../assets/icon.svg";
 import { Congratulations } from "../../components/index";
 import { openURL } from "expo-linking";
 
@@ -45,7 +44,11 @@ const Search = () => {
         <Congratulations />
       ) : (
         <View style={styles.secondContainer}>
-          <Logo />
+          <Image
+            source={require("../../assets/icon.png")}
+            style={styles.iconImage}
+            resizeMode="cover"
+          />
           <TouchableOpacity
             onPress={() => openURL("https://www.win.investments/")}
             style={styles.buttonSeeMore}
@@ -63,7 +66,7 @@ export default Search;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    maxWidth: "100%",
+    width: "100%",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#0a0a0a",
@@ -71,15 +74,27 @@ const styles = StyleSheet.create({
   secondContainer: {
     gap: 50,
     alignItems: "center",
+    position: "absolute",
+    marginTop: "50%",
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  iconImage: {
+    resizeMode: "contain",
+    width: 200,
+    height: 120,
   },
   buttonSeeMore: {
-    backgroundColor: "#64c883",
+    // backgroundColor: "#64c883",
     width: "95%",
-    borderRadius: 5,
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: "#64c883",
     padding: 10,
   },
   buttonText: {
     color: "#ffffff",
+    textAlign: "center",
     fontSize: 20,
   },
   fontIntegral: {

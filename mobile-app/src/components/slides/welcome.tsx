@@ -79,9 +79,6 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: "8%",
   },
-  mockupImage: {
-    marginBottom: -50,
-  },
   fontIntegral: {
     fontFamily: "IntegralCFRegular",
   },

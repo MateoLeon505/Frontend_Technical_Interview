@@ -15,7 +15,7 @@ const Congratulations = () => {
     IntegralCFRegular: require("../assets/fonts/Font_integral-cf/IntegralCF-Regular.ttf"),
     NunitoSansBold: require("../assets/fonts/Nunito_Sans/NunitoSans_7pt_Condensed-Bold.ttf"),
   });
-  
+
   useEffect(() => {
     const prepare = async () => {
       await SplashScreen.preventAutoHideAsync();
@@ -63,9 +63,12 @@ export default Congratulations;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    position: "absolute",
+    marginTop: "50%",
+    marginLeft: "auto",
+    marginRight: "auto",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
     gap: 20,
   },
   fontIntegral: {
